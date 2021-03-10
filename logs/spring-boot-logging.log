@@ -1,0 +1,18 @@
+2019-07-25 00:26:01.638  INFO 11920 --- [main] com.hci.ecommerce.EcommerceApplication   : Starting EcommerceApplication on DESKTOP-KGLKPBC with PID 11920 (started by Edy Rakhman in C:\Users\Edy Rakhman\OneDrive\hci\ecommerce)
+2019-07-25 00:26:01.654  INFO 11920 --- [main] com.hci.ecommerce.EcommerceApplication   : No active profile set, falling back to default profiles: default
+2019-07-25 00:26:14.940  INFO 11920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 00:26:14.942  INFO 11920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 00:26:16.189  INFO 11920 --- [main] o.a.c.c.C.[.[localhost].[/ecommerce]     : Initializing Spring embedded WebApplicationContext
+2019-07-25 00:26:17.238  INFO 11920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 00:26:18.710  INFO 11920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 00:26:19.855  INFO 11920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-25 00:26:20.343  INFO 11920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-25 00:26:20.351  INFO 11920 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-25 00:26:21.234  INFO 11920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-25 00:26:22.156  INFO 11920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-25 00:26:23.667  INFO 11920 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7b61bf11'
+2019-07-25 00:26:26.692  WARN 11920 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-25 00:26:28.757  INFO 11920 --- [main] com.hci.ecommerce.EcommerceApplication   : Started EcommerceApplication in 28.457 seconds (JVM running for 29.299)
+2019-07-25 00:26:36.581  INFO 11920 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/ecommerce]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
