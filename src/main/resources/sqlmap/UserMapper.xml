@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="campingceria.master.mapper.UserMapper">
+
+	<resultMap id="BaseResultMap" type="campingceria.master.entity.User">
+		<id column="pk_user" property="pkUser" />
+		<id column="email" property="email" />
+		<id column="phone_no" property="phoneNo" />
+		<id column="full_name" property="fullName" />
+	</resultMap>
+	
+	<select id="selectOne" parameterType="campingceria.master.entity.User" resultMap="BaseResultMap">
+		select 
+			pk_user,
+			email,
+			phone_no,
+			full_name
+		from m_user
+		<where>
+			<if test="email != null">
+				and email = #{email}
+			</if>
+			<if test="password != null">
+				and password = password
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectList" parameterType="campingceria.master.entity.User" resultMap="BaseResultMap">
+		select 
+			pk_user,
+			email,
+			phone_no,
+			full_name
+		from m_user
+	</select>
+	
+</mapper>

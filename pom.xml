@@ -13,9 +13,10 @@
 	<version>1.0.0-RELEASE</version>
 	<packaging>war</packaging>
 	<name>master</name>
-	<description>API for accessing master table</description>
+	<description>Rest API for access master table</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<start-class>campingceria.master.MainApp</start-class>
 	</properties>
 	<dependencies>
 		<!-- Spring Boot -->
@@ -48,6 +49,12 @@
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.1.0</version>
+		</dependency>
+		<!-- SWAGGER -->
+		<dependency>
+		    <groupId>org.springdoc</groupId>
+		    <artifactId>springdoc-openapi-ui</artifactId>
+		    <version>1.5.2</version>
 		</dependency>
 	</dependencies>
 	<build>

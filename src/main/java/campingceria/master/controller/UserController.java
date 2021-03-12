@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +23,7 @@ public class UserController {
 
 	@PostMapping("/user/login")
 	ResponseEntity<HashMap<String,Object>> login(@RequestBody User param) {
+		System.out.println(param);
 		User user = userService.selectOne(param);
 		if (user != null) {
 			HashMap<String,Object> map = new HashMap<String,Object>();
@@ -32,9 +34,9 @@ public class UserController {
 		}
 	}
 	
-	@PostMapping("/user/list")
-	ResponseEntity<HashMap<String,Object>> list(@RequestBody User param) {
-		List<User> list = userService.selectList(param);
+	@GetMapping("/user/list")
+	ResponseEntity<HashMap<String,Object>> list() {
+		List<User> list = userService.selectList(new User());
 		if (list != null) {
 			HashMap<String,Object> map = new HashMap<String,Object>();
 			map.put("users", list);

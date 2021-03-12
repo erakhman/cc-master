@@ -1,4 +1,4 @@
-package campingceria.master.service;
+package campingceria.master.service.impl;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import campingceria.master.entity.User;
 import campingceria.master.mapper.UserMapper;
+import campingceria.master.service.UserService;
 
 @Service("userService")
 @MapperScan(basePackages= {"campingceria.master.mapper"})
